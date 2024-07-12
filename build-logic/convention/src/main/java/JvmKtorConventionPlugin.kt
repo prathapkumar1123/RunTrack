@@ -1,18 +1,18 @@
-import com.kreativmynds.convention.addUILayerDependencies
+import com.kreativmynds.convention.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 
-class AndroidFeatureUIConventionPlugin: Plugin<Project> {
+class JvmKtorConventionPlugin: Plugin<Project> {
 
     override fun apply(target: Project) {
         target.run {
             pluginManager.run {
-                apply("runtrack.android.library.compose")
+                apply("org.jetbrains.kotlin.plugin.serialization")
             }
 
             dependencies {
-                addUILayerDependencies(target)
+                "implementation"(libs.findBundle("ktor").get())
             }
         }
     }

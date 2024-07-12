@@ -132,6 +132,7 @@ runtrack-android-library-compose = { id = "runtrack.android.library.compose", ve
 runtrack-android-feature-ui = { id = "runtrack.android.feature.ui", version = "unspecified" }
 runtrack-android-room = { id = "runtrack.android.room", version = "unspecified" }
 runtrack-jvm-library = { id = "runtrack.jvm.library", version = "unspecified" }
+runtrack-jvm-ktor = { id = "runtrack.jvm.ktor", version = "unspecified" }
 
 [bundles]
 compose = [
@@ -149,3 +150,11 @@ compose-debug = [
 ]
 koin = ["koin-core", "koin-android", "koin-android-workmanager"]
 koin-compose = ["koin-core", "koin-android", "koin-android-workmanager", "koin-androidx-compose"]
+ktor = [
+    "ktor-client-auth",
+    "ktor-client-cio",
+    "ktor-client-content-negotiation",
+    "ktor-client-core",
+    "ktor-client-logging",
+    "ktor-serialization-kotlinx-json",
+]
