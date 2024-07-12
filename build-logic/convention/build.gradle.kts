@@ -26,5 +26,9 @@ gradlePlugin {
             id = "runtrack.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
+        register("androidLibraryCompose") {
+            id = "runtrack.android.library.compose"
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
+        }
     }
 }
