@@ -1,17 +1,7 @@
 plugins {
-    alias(libs.plugins.runtrack.android.library)
-}
-
-android {
-    namespace = "com.kreativmynds.auth.domain"
+    alias(libs.plugins.runtrack.jvm.library)
 }
 
 dependencies {
-
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    implementation(projects.core.domain)
 }
