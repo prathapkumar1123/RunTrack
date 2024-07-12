@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.runtrack.android.library)
+    alias(libs.plugins.runtrack.android.feature.ui)
 }
 
 android {
