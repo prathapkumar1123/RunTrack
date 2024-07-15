@@ -44,7 +44,7 @@ dependencies {
     // Crypto
     implementation(libs.androidx.security.crypto.ktx)
 
-    api(libs.core)
+    //api(libs.core)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
